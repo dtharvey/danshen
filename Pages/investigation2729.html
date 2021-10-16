@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Part VI: Investigations 27–29</title>
+</head>
+<link rel="stylesheet" href="../CSS/danshen.css" />
+<body>
+<h2>Part VI. Finding the Global Optimum Across All Analytes</h2>
+<h3>Investigations 27–29: The Global Desirability Function and the Total Extraction of Danshen</h3>
+<p>Although the desirability function seems complex, it is easy  to appreciate how it works. As an example, let's consider how to calculate danshensu's individual desirability, <em>d</em>, for each combination of extraction time and solvent-to-solid ratio in <a href="investigation2425.html#Fig10">Figure 10</a>. First, we determine danshensu's maximum extraction yield and define the response, <em>R</em>, as the fraction of that maximum extraction yield. Next, we define the upper limit and the lower limit. Let's set the upper limit as 95% of danshensu's maximum extraction yield; thus, <em>U</em> is 0.95 and <em>d</em> = 1.00 anytime the extraction yield exceeds 95% of its maximum value. If we define danshensu's lower limit as 90% of its maximum yield, then <em>L</em> is 0.90 and <em>d</em> = 0 anytime the extraction yield is less than 90% of its maximum value. Between the upper limit and the lower limit, we calculate <em>d</em> as defined above. Figure 16 shows danshensu's individual desirability function as a response surface using <em>s</em> = 1, which assumes a linear increase in the individual desirability between the upper limit and the lower limit.</p>
+<center><iframe width="500" height="500" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~dtharvey/58.embed?width=500&height=500"></iframe></center>
+<p class="investigation"><strong>Investigation 27.</strong> Compare the response surface for danshensu's individual desirability (Figure 16) to its response surface in terms of extraction yield (<a href="investigation2425.html#Fig10">Figure 10</a>). In what ways are these response surfaces similar and in what ways are they different?</p>
+<p>An important feature of the global desirability function is that <em>D</em> is the product of each analyte's individual desirability function, which means the global desirability is zero for any combination of extraction time and solvent-to-solid ratio if at least one analyte's individual desirability function is zero. In addition, we can assign more weight to some analytes and less weight to other analytes by adjusting the value of the relative weight, <em>r</em>, for each analyte.</p>
+<p class="investigation"><strong>Investigation 28.</strong> To explore the effect on the global desirability of weighting analytes, let's assume we have four analytes with individual desirabilities of 0.90, 0.80, 0.70, and 0.60. What is the global desirability if you (a) weight the factors evenly by assigning each an <em>r</em> of 1; (b) assign a weight of 3 to the first analyte and a weight of 1 to the other three analytes; (c) assign a weight of 5 to the first analyte and a weight of 1 to the other three analytes; (d) assign a weight of 3 to the last analyte and a weight of 1 to the other three analytes; and (e) assign a weight of 2 to the second and third analytes and a weight of 1 to the first and last analyte? Examine your results and discuss any trends you see.</p>
+<p>The ability to adjust the upper limit, <em>U</em>, the lower limit, <em>L</em>, and the scaling factor, <em>s</em>, when calculating individual desirabilities, and to adjust the relative weighting, <em>r</em>, for each analyte when calculating the global desirability provides flexibility in identify the optimum conditions for extracting samples of Danshen. Figure 17 shows the global desirability function's response surface based on individual desirability functions for danshensu, lithospermic acid, salvianolic acid A, cryptotanshinone, tanshinone I, and tanshinone IIA. Each individual desirability function was calculated using an upper limit of 0.95, a lower limit of 0.90, and with <em>s</em> set to 1. All six analytes were weighted equally by setting their respective values of <em>r</em> to 1.</p>
+<center><iframe width="500" height="500" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~dtharvey/55.embed?width=500&height=500"></iframe></center>
+<p class="investigation"><strong>Investigation 29.</strong> A comparison of Figure 16 and Figure 17 shows that the global desirability function has a smaller range of maximum values than does the individual desirability function for danshensu. Which analytes limit the range of optimum values for the global desirability function? (In answering this question, you may wish to review the individual response surfaces in <a href="investigation2425.html#Fig10">Figures 10-15</a>.) Based on Figure 17, what is the range of extraction times and range of solvent-to-solid ratios that result in an optimum global desirability? Given the range of possible values for the extraction time and the solvent-to-solid ratio, what values are the best option? Why?</p>
+<nav>
+<ul class="navigate">
+<li><a href="investigation26.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation30.html">next</a></li>
+</ul>
+</nav>
+<hr />
+</body>
+</html>

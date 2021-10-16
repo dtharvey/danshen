@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part V: Investigations 22–23</title>
+</head>
+<link rel="stylesheet" href="../CSS/danshen.css" />
+<body>
+<h2>Part V. Optimizing the Solvent-to-Solid Ratio and the Extraction Time</h2>
+<h3>Investigations 22-23: Modeling the Effect of Solvent-to-Solid Ratio and Extraction Time on Extraction Yield of Danshensu</h3>
+<p>Although the results in <a href="investigation1921.html#Table2">Table 2</a> are instructive in helping us understand how the extraction time and the solvent-to-solid ratio affect danshensu's extraction yield, a more quantitative model will provide us with a better ability to predict its extraction yield for any combination of factor levels. We can build an empirical model for danshensu's extraction yield using a second-order polynomial equation of the general form</p>
+<div class="equation">\[EY={ \beta  }_{ 0 }+{ \beta  }_{ a }A+{ \beta  }_{ b }B+{ \beta  }_{ aa }{ A }^{ 2 }+{ \beta  }_{ bb }{ B }^{ 2 }+{ \beta  }_{ ab }AB\]</div>
+<p>where <em>EY</em> is the extraction yield, <em>A</em> is the extraction time, <em>B</em> is the solvent-to-solid ratio, and <em>β</em><sub>0</sub>, <em>β</em><sub>a</sub>, <em>β</em><sub>b</sub>, <em>β</em><sub>aa</sub>, <em>β</em><sub>bb</sub>, and <em>β</em><sub>ab</sub> are the model's coefficients.</p>
+<p class="investigation"><strong>Investigation 22.</strong> What does it mean to describe a model as empirical instead of theoretical? What are the advantages and the disadvantages of  an empirical model? What is the significance of each coefficient in this empirical model in terms of how it affects the extraction yield? </p>
+<p>We can fit this empirical model to the data in Table 2 using a linear regression analysis [<a href="#Ref14">14</a>]. The resulting empirical model of</p>
+<div class="equation">\[EY=0.575+0.0225A+0.00905B-0.00125{ A }^{ 2 }-0.000165{ B }^{ 2 }+0.000100AB\]</div>
+<p>is significant at <em>p</em> = 0.0057 with <em>β</em><sub>0</sub> significant at <em>p</em> < 0.001, <em>β</em><sub>a</sub> significant at <em>p</em> < 0.01, and <em>β</em><sub>b</sub> and <em>β</em><sub>bb</sub> significant at <em>p</em> < 0.05.</p>
+<p class="investigation"><strong><a name="Invest23" id="Invest23"></a>Investigation 23.</strong> What does it mean to say that the regression analysis is significant at <em>p</em> = 0.0057? Do the results of this regression analysis, as expressed in the model's coefficients, agree with your results from <a href="investigation1921.html#Invest21">Investigation 21</a>? Why or why not? What is the meaning of the intercept in this model and how does it affect your understanding of the empirical model's validity? Use the full regression model to calculate danshensu's predicted extraction yields for the central-composite design in Table 2. Organize your results in a table with columns for the factor levels, the experimental extraction yields, and the predicted extraction yields. Add a column that shows the difference between the experimental extraction yields and the predicted extraction yields. Calculate the mean, the standard deviation, and the 95% confidence interval for these difference values and comment on your results.</p>
+<nav>
+<ul class="navigate">
+<li><a href="investigation1921.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation2425.html">next</a></li>
+</ul>
+</nav>
+<hr />
+<div class="footnote">
+<p><a name="Ref14" id="Ref14"></a>[14] You can read more about linear regression in <a href="http://bit.ly/1r3wJoz">Chapter 5</a> of <em>Analytical Chemistry 2.0</em>. Although the context in this reference is fitting a straight-line to a response based on a single factor, the general approach, but not the specific equations, applies to fitting a full second-order polynomial to data with two factors. For a more detailed discussion of central-composite designs and linear regression, see Myers, R. H.; Montgomery, D. C. <em>Response Surface Methodology</em>, Wiley Series in Probability and Statistics, Wiley-Interscience:New York, <strong>2002</strong> or Brereton, R. G. <em>Chemometrics: Data Analysis for the Laboratory and Chemical Plant</em>, Wiley:Chichester, England, <strong>2003</strong>.
+</div>
+</body>
+</html>

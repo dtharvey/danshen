@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Part V: Investigations 19–21</title>
+</head>
+<link rel="stylesheet" href="../CSS/danshen.css" />
+<body>
+<h2>Part V. Optimizing the Solvent-to-Solid Ratio and the Extraction Time</h2>
+<h3>Investigations 19-21: Optimizing Two Factors at Once Using a Central-Composite Design</h3>
+<p>Before continuing, let's review our progress in developing a method for extracting hydrophilic and lipophilic compounds from Danshen. In <a href="investigation10.html">Part IV</a> we completed a series of one-factor-at-a-time optimizations to determine the optimum solvent (80% methanol and 20% water, by volume), the optimum extraction temperature (70°C), and the optimum microwave power (800 W). For each of these optimizations we maintained a constant ratio of solvent-to-solid (60.0 mL of solvent and 3.00 g of Danshen) and a constant extraction time (5.00 min).</p>
+<p>Now, in Part V, we turn our attention to optimizing the final two factors. First, however, we need to consider more carefully how we report the result of an extraction. In optimizing an extraction our goal is find a set of conditions that allow us to extract, or recover, all the analyte. Because we do not know how much analyte is in a sample, we seek, instead, to find the set of conditions that will recover the greatest amount of analyte, with results reported as mg analyte/g sample.</p>
+<p class="investigation"><strong>Investigation 19.</strong> When optimizing the choice of solvent, temperature, and microwave power, we used absorbance values taken directly from the HPLC analysis (see, for example, <a href="investigation18.html#Fig8">Figure 8</a>) without first converting them into extraction yields reported in mg analyte/g sample. Why is it possible to use absorbance values for the optimizations in <a href="investigation10.html">Part IV</a>? Can you use absorbance values when optimizing the solvent-to-solid ratio or the extraction time? Why or why not? Using the optimum conditions from <a href="investigation18.html#Fig8">Figure 8</a> and your results from <a href="investigation0406.html#Invest6">Investigation 6</a>, report the extraction yield for each analyte as mg analyte/g sample.</p>
+<p>Extraction time and the solvent-to-solid ratio are examples of dependent factors that may interact with each other in interesting and unpredictable ways. Although we can optimize both factors through a series of one-factor-at-a-time optimizations, a more efficient approach is to optimize them simultaneously using the experimental design shown in Figure 9. This experimental design, which is called a central-composite design, is efficient because it uses a small number of experiments—nine in this case, although replication of the center point is common—to explore a range of levels for each factor [<a href="#Ref12">12</a>].</p>
+<center><iframe width="450" height="450" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~dtharvey/33.embed?width=450&height=450"></iframe></center>
+<p class="investigation"><strong>Investigation 20.</strong> We can divide the points in a central-composite design into three groups: a set of points that allow us to explore the effect on the extraction yield of extraction time only; a set of points that allow us to explore the effect on the extraction yield of the solvent-to-solid ratio only; and a set of points that allow us to explore the effect on the extraction yield of the interaction between extraction time and the solvent-to-solid ratio. Explain how each of these is accomplished in using the experimental design in Figure 9.</p>
+<p>Table 2 provides extraction yields for danshensu using the central-composite design in Figure 9. Note that the design's central point is run five times—which provides us with a measure of the reproducibility—and that the other points are run one time each.</p>
+<center>
+<table>
+<thead>
+<caption>
+<a name="Table2" id="Table2"></a>Table 2. Extraction Yields for Danshensu Using a Central-Composite Design</caption>
+<tr>
+<th>extraction time (min)</th>
+<th>solvent-to-solid ratio (mL/g)</th>
+<th>extraction yield (mg/g)</th>
+<th>extraction time (min)</th>
+<th>solvent-to-solid ratio (mL/g)</th>
+<th>extraction yield (mg/g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.00</td>
+<td>10.9</td>
+<td>0.721</td>
+<td>5.00</td>
+<td>25.0</td>
+<td>0.785</td>
+</tr>
+<tr>
+<td>5.00</td>
+<td>25.0</td>
+<td>0.790</td>
+<td>5.00</td>
+<td>39.1</td>
+<td>0.784</td>
+</tr>
+<tr>
+<td>3.00</td>
+<td>15.0</td>
+<td>0.743</td>
+<td>7.00</td>
+<td>25.0</td>
+<td>0.805</td>
+</tr>
+<tr>
+<td>2.18</td>
+<td>25.0</td>
+<td>0.742</td>
+<td>5.00</td>
+<td>25.0</td>
+<td>0.801</td>
+</tr>
+<tr>
+<td>3.00</td>
+<td>35.0</td>
+<td>0.754</td>
+<td>5.00</td>
+<td>25.0</td>
+<td>0.773</td>
+</tr>
+<tr>
+<td>5.00</td>
+<td>25.0</td>
+<td>0.813</td>
+<td>7.82</td>
+<td>25.0</td>
+<td>0.820</td>
+</tr>
+<tr>
+<td>7.00</td>
+<td>15.00</td>
+<td>0.785</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</center>
+<p class="investigation"><strong><a name="Invest21" id="Invest21"></a>Investigation 21.</strong> Identify the five trials at the center of central-composite design and, for these trials, calculate the extraction yield's mean, standard deviation, relative standard deviation, variance, and 95% confidence interval about the mean [<a href="#Ref13">13</a>].  What is the statistical meaning for each of these values? Transfer to Figure 9 the extraction yield for each experiment, using the mean extraction yield for the design's center point. What conclusions can you reach regarding the effect on danshensu's extraction yield of extraction time and solvent-to-solid ratio? Estimate the optimum conditions for maximizing danshensu's extraction yield and explain your reasoning?</p>
+<nav>
+  <ul class="navigate">
+<li><a href="investigation18.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation2223.html">next</a></li>
+</ul>
+</nav>
+<hr />
+<div class="footnote">
+  <p><a name="Ref12" id="Ref12"></a>[12] For a more detailed discussion of central-composite designs, see Myers, R. H.; Montgomery, D. C. <em>Response Surface Methodology</em>, Wiley Series in Probability and Statistics, Wiley-Interscience:New York, <strong>2002</strong> or Brereton, R. G. <em>Chemometrics: Data Analaysis for the Laboratory and Chemical Plant</em>, Wiley:Chichester, England, <strong>2003</strong>.
+</p></div>
+<div class="footnote">
+<p><a name="Ref13" id="Ref13"></a>[13] You can read more about characterizing data using means, standard deviations, variances, and confidence intervals in <a href="http://bit.ly/1r3wJoz">Chapter 4</a> of <em>Analytical Chemistry 2.0.</em></p>
+</div>
+</body>
+</html>

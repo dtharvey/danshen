@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Part VI: Investigation 26</title>
+</head>
+<link rel="stylesheet" href="../CSS/danshen.css" />
+<body>
+<h2>Part VI. Finding the Global Optimum Across All Analytes</h2>
+<h3>Investigation 26: Individual Desirability Functions</h3>
+<p>In <a href="investigation1921.html">Part V</a> we determined that the individual extraction yields for danshensu, lithospermic acid, salvianolic acid A, cryptotanshinone, tanshinone I, and tanshinone IIA increase at longer extraction times and for larger solvent-to-solid ratios [<a href="#Ref15">15</a>].  We also determined that the optimum extraction yield for tanshinone IIA is at a shorter extraction time than that for the other analytes, and that the optimum solvent-to-solid ratio for lithospermic acid and for salvianolic acid A are at larger solvent-to-solid ratios than that for the other analytes. Clearly selecting a single set of extraction conditions—what we call the global optimum—requires a compromise.</p>
+<p>There are a variety of useful approaches to locating the global optimum when working with multiple analytes. For example, when working with a small number of analytes, typically two or three, it is possible to overlay individual contour plots and look for a set of factor levels where each analyte exceeds some threshold value. When working with a larger number of analytes, a more useful approach is to use Derringer’s desirability function [<a href="#Ref16">16</a>].</p>
+<p>The general form of the desirability function for <em>n</em> analytes is</p>
+<div class="equation">
+\[D={ ({ d }_{ 1 }^{ { r }_{ 1 } }\times { d }_{ 2 }^{ { r }_{ 2 } }\times \cdots \times { d }_{ n }^{ { r }_{ n } }) }^{ (1/\sum { { r }_{ i } } ) }\]
+</div>
+<p>where <em>D</em> is the global desirability, <em>d</em><sub><em>i</em></sub> is the individual desirability for the <em>i</em><sup>th</sup> analyte, and <em>r</em><sub><em>i</em></sub> is the relative importance for the <em>i</em><sup>th</sup> analyte, which allows us to weight the global desirability toward those analytes we deem more important. An analyte's individual desirability is determined by comparing its response, <em>R</em><sub><em>i</em></sub>, at a particular point on the response surface to an upper limit, <em>U</em><sub><em>i</em></sub>, and to a lower limit, <em>L</em><sub><em>i</em></sub>, of our choosing. If we wish to maximize the response, we set the individual desirabilities as</p>
+<p><center><em>d</em><sub><em>i</em></sub> = 0 if <em>R</em><sub><em>i</em></sub> < <em>L</em><sub><em>i</em></sub></center></p>
+<p><center><span class="equation"><em>d</em><sub><em>i</em></sub> = \({ \left( \frac { { R }_{ i }-{ L }_{ i } }{ { U }_{ i }-{ L }_{ i } }  \right)  }^{ s }\)</span> if <em>L</em><sub><em>i</em></sub> ≤ <em>R</em><sub><em>i</em></sub> ≤ <em>U</em><sub><em>i</em></sub></center></p>
+<p><center><em>d</em><sub><em>i</em></sub> = 1.00 if <em>R</em><sub><em>i</em></sub> > <em>U</em><sub><em>i</em></sub></center></p>
+<p>where the scaling factor, <em>s</em>, determines how slowly or how quickly <em>d</em><sub><em>i</em></sub> approaches its maximum value of 1.</p>
+<p class="investigation"><strong>Investigation 26.</strong> To explore the effect of the scaling factor, <em>s, </em>on individual desirability, calculate <em>d</em><sub><em>i</em></sub> for responses from 0.0 to 1.0, in steps of 0.1, using an upper limit of 0.75 and a lower limit of 0.25, and values of 0.5, 1.0, and 5.0 for <em>s</em>. Examine your results and comment on any trends you see.</p> 
+<nav>
+<ul class="navigate">
+<li><a href="investigation2425.html">back</a></li>
+<li><a href="TOC.html">table of contents</a></li>
+<li><a href="investigation2729.html">next</a></li>
+</ul>
+</nav>
+<hr />
+<div class="footnote">
+<p><a name="Ref15" id="Ref15"></a>[15] As a reminder, the extraction yields for rosmarinic acid and for dihydrotanshinone do not show much variation with either the extraction time or  the solvent-to-solid ratio, although the extraction of rosmarinic acid increases slightly with increasing solvent-to-solid ratios and the extraction of dihydrotanshinone decreases slightly with increasing extraction times. We will continue to assume that the extraction yields for these two analytes are relatively independent of extraction time and solvent-to-solid ratio.</p>
+</div>
+<div class="footnote">
+<p><a name="Ref16" id="Ref16"></a>[16] For additional information on Derringer's desirability function, see &quot;Experimental design and multiple response optimization. Using the desirability function in analytical methods development,&quot; the full reference for which is Candioti, L. V.; De Zan, M. M.; Cámara, M. S.; Goicoechea, H. <em>Talanta</em>, <strong>2014</strong>, <em>124</em>, 123–128 (<a href="http://doi.org/10.1016/j.talanta.2014.01.034">DOI</a>).</p>
+</div>
+</body>
+</html>
